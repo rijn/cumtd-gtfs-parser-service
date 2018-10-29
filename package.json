@@ -1,0 +1,32 @@
+{
+  "name": "cumtd-gtfs-parser-service",
+  "version": "0.1.0",
+  "description": "CUMTD GTFS parser and data service. Read the RSS feed and cache locally.",
+  "main": "index.js",
+  "repository": "git@github.com:rijn/cumtd-gtfs-parser-service.git",
+  "author": "Rijn <bxbian951122@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "config": "^2.0.1",
+    "eslint": "^5.8.0",
+    "eslint-loader": "^2.1.1",
+    "express": "^4.16.4",
+    "feedparser": "^2.2.9",
+    "gtfs": "^1.6.10",
+    "lodash": "^4.17.11"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node index.js",
+    "eslint": "eslint src/. --config .eslintrc.json",
+    "lint": "yarn run eslint"
+  }
+}
