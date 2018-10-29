@@ -1,3 +1,22 @@
 {
-  "CUMTD_KEY": ""
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "CUMTD_KEY": "",
+  "gtfs": {
+    "mongoUrl": "mongodb://localhost:27017/gtfs",
+    "agencies": [
+      {
+        "agency_key": "cumtd",
+        "path": "CONFIG_BY_NODE",
+        "exclude": [ "shapes" ]
+      }
+    ]
+  },
+  "mongodb": "mongodb://localhost:27017/gtfs",
+  "feedUrl": "https://developer.cumtd.com/rss"
 }

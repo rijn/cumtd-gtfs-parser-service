@@ -1,7 +1,11 @@
 const presets = [
   [
-    "@babel/env"
-  ],
+    "@babel/env", {
+      "targets": {
+        "node": "current"
+      }
+    }
+  ]
 ];
 
 const plugins = [
@@ -15,7 +19,7 @@ const plugins = [
         "sequelize": "sequelize"
       }
     }
-  ] 
+  ]
 ]
 
 module.exports = { presets, plugins };

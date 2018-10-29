@@ -6,6 +6,9 @@
   "repository": "git@github.com:rijn/cumtd-gtfs-parser-service.git",
   "author": "Rijn <bxbian951122@gmail.com>",
   "license": "MIT",
+  "directories": {
+    "lib": "src"
+  },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
@@ -14,15 +17,33 @@
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
     "@babel/register": "^7.0.0",
+    "@feathersjs/configuration": "^2.0.4",
+    "@feathersjs/errors": "^3.3.4",
+    "@feathersjs/express": "^1.2.7",
+    "@feathersjs/feathers": "^3.2.3",
+    "@feathersjs/socketio": "^3.2.6",
+    "axios": "^0.18.0",
     "babel-eslint": "^10.0.1",
     "babel-plugin-module-resolver": "^3.1.1",
+    "bluebird": "^3.5.2",
+    "compression": "^1.7.3",
     "config": "^2.0.1",
+    "cors": "^2.8.4",
     "eslint": "^5.8.0",
     "eslint-loader": "^2.1.1",
     "express": "^4.16.4",
+    "feathers-hooks-common": "^4.17.10",
+    "feathers-mongoose": "^6.2.0",
     "feedparser": "^2.2.9",
+    "feedsub": "^0.7.1",
     "gtfs": "^1.6.10",
-    "lodash": "^4.17.11"
+    "helmet": "^3.14.0",
+    "lodash": "^4.17.11",
+    "mongodb-core": "^3.1.7",
+    "mongoose": "^5.3.7",
+    "request": "^2.88.0",
+    "unzip": "^0.1.11",
+    "winston": "^3.1.0"
   },
   "scripts": {
     "start": "NODE_ENV=production node index.js",
