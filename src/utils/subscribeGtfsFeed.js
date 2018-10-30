@@ -1,4 +1,4 @@
-const FeedSub = require('FeedSub');
+const FeedSub = require('feedsub');
 const config = require('config');
 
 const feedUrl = config.get('feedUrl');
